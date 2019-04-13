@@ -58,25 +58,19 @@ $(document).ready(function() {
    		 var firstTime = 0;
 
 	   var firstTime = moment(firstTime, "HH:mm").subtract(1, "years");
-	    console.log(firstTime);
 
 	    var currentTime = moment();
-	    console.log("Current Time: " + moment(currentTime).format("HH:mm"));
 
 		var diffTime = moment().diff(moment(firstTime), "minutes");
-		console.log("Time Difference: " + diffTime);
 
 	    var tRemainder = diffTime % frequency;
-	    console.log(tRemainder);
 
 	    var tMinutesTillTrain = frequency - tRemainder;
-	    console.log("Minutes Until Train : " + tMinutesTillTrain);
 
 	    var nextTrain = moment().add(tMinutesTillTrain, "minutes");
-	    console.log("Arrival TIme: " + moment(nextTrain).format("HH:mm"));
 
 
-	  $("#train-table > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + 
+	  $("#train-table > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency  + " minutes" +
 	   "</td><td>" + moment(nextTrain).format("HH:mm") + "</td><td>" + tMinutesTillTrain + "</td></tr>");
 	});
 
