@@ -1,0 +1,45 @@
+body{
+    background: url(images/train_station_platform-wallpaper-3554x1999.jpg);
+    background-size: cover;
+
+}
+.jumbotron {
+    background: #0085CA !important;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+.panel{
+    background: #0085CA !important;
+    color: #101820 ;
+    font-weight: bold !important;
+    
+}
+#submit{
+    margin: 10px 10px 10px 0px;
+
+}
+#formTitle{
+    background: #dff0d8 !important;
+    color: white !important;
+    border: 1px black important;
+    font-weight: bold !important;
+}
+.panel-body{
+    background-color: #BFC0BF;
+    margin-left: 0px;
+    border: 1px black !important;
+}
+.row{
+    margin: 0%
+}
+#test{
+    padding: 0px;
+    margin: 0px
+}
+::placeholder{
+    color: #0085CA;
+}
